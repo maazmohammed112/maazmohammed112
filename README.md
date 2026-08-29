@@ -7,7 +7,7 @@
 
   <br/>
 
-  <!-- Top Interactive Quick Links -->
+  <!-- Top Navigation & Badges -->
   <a href="https://discussit.in" target="_blank">
     <img src="https://img.shields.io/badge/%3Cdiscuss%2F%3E-discussit.in-6366F1?style=for-the-badge&logo=react&logoColor=white" alt="Discuss Platform"/>
   </a>
@@ -35,14 +35,10 @@
   <table>
     <tr>
       <td width="32%" align="center" valign="middle">
-        <a href="https://maazprofile.tech" target="_blank">
-          <img src="./assets/portrait.jpg" width="220" style="border-radius: 18px; border: 2px solid #58a6ff; box-shadow: 0 12px 32px rgba(0,0,0,0.6);" alt="Mohammed Maaz A — Constellation Portrait"/>
-        </a>
-        <br/>
-        <sub><b>🌌 Interactive Constellation Portrait</b></sub>
+        <img src="./assets/portrait-animated.svg" width="220" style="border-radius: 18px; border: 2px solid #58a6ff; box-shadow: 0 12px 32px rgba(0,0,0,0.6);" alt="Mohammed Maaz A"/>
       </td>
       <td width="68%" valign="middle" align="left">
-        <h2>👋 Mohammed Maaz A</h2>
+        <h2>Mohammed Maaz A</h2>
         <p><b>Automation Analyst &bull; Agentic AI & SAP Specialist &bull; Full-Stack Engineer</b></p>
         <p>Designing and orchestrating high-throughput enterprise automation workflows with <b>UiPath</b>, <b>Power Automate</b>, <b>SAP BTP/BPA</b>, and integrating <b>Autonomous Agentic AI</b> into mission-critical business cycles.</p>
         <p>
@@ -51,7 +47,6 @@
         <p>
           <a href="https://discussit.in"><img src="https://img.shields.io/badge/Live%20Platform-discussit.in-6366F1?style=flat-square&logo=react&logoColor=white" alt="Discuss"/></a>
           <a href="https://maazprofile.tech"><img src="https://img.shields.io/badge/Portfolio-maazprofile.tech-0A66C2?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-          <a href="./constellation-portrait/single-file.html"><img src="https://img.shields.io/badge/Interactive%20Canvas-Constellation%20Mesh-10B981?style=flat-square&logo=html5&logoColor=white" alt="Constellation Mesh Demo"/></a>
         </p>
       </td>
     </tr>
@@ -64,7 +59,7 @@
 <!-- GITHUB ENGINEERING TELEMETRY & LIVE METRICS                               -->
 <!-- ========================================================================= -->
 
-## 📊 GitHub Engineering Analytics
+## GitHub Engineering Analytics
 
 <div align="center">
   <table>
@@ -101,13 +96,13 @@
 <!-- FEATURED FLAGSHIP PLATFORM                                                -->
 <!-- ========================================================================= -->
 
-## 🚀 Flagship Platform: `<discuss/>`
+## Flagship Platform: `<discuss/>`
 
 <div align="center">
   <table>
     <tr>
       <td align="left">
-        <h3><a href="https://discussit.in">🌐 &lt;discuss/&gt; — Modern Community & Discussion Ecosystem</a></h3>
+        <h3><a href="https://discussit.in">&lt;discuss/&gt; — Modern Community & Discussion Ecosystem</a></h3>
         <p><b>Founder & Lead Architect</b> &nbsp;|&nbsp; <b>Live Web:</b> <a href="https://discussit.in"><b>discussit.in</b></a> &nbsp;|&nbsp; <b>Mobile:</b> Google Play Store (Closed Testing)</p>
         <p>A full-scale, real-time social networking application architected from scratch to enable high-speed community discourse, structured thread curation, instant multimedia sharing, and dynamic user feeds.</p>
         <p>
@@ -125,25 +120,10 @@
 <br/>
 
 <!-- ========================================================================= -->
-<!-- INTERACTIVE CONSTELLATION MESH COMPONENT                                  -->
-<!-- ========================================================================= -->
-
-## 🌌 Interactive Constellation Mesh Portrait
-
-Explore the standalone drop-in interactive canvas component available inside [`constellation-portrait/`](./constellation-portrait/):
-
-- 💻 **Desktop**: Move cursor over portrait to disperse particles and draw luminous constellation lines.
-- 📱 **Mobile & iPad**: Touch and drag to guide glowing particle streams, tap to trigger explosive kinetic shockwaves.
-- 📦 **Drop-in Ready**: Includes single-file HTML, modular ES6 class, and React/Next.js components.
-- 🔗 **Direct Demo**: [`constellation-portrait/single-file.html`](./constellation-portrait/single-file.html)
-
-<br/>
-
-<!-- ========================================================================= -->
 <!-- TECHNICAL COMPETENCY MATRIX                                               -->
 <!-- ========================================================================= -->
 
-## 🛠️ Technical Competency Matrix
+## Technical Competency Matrix
 
 <table>
   <tr>
@@ -221,7 +201,7 @@ Explore the standalone drop-in interactive canvas component available inside [`c
 <!-- PROFESSIONAL EXPERIENCE                                                   -->
 <!-- ========================================================================= -->
 
-## 💼 Professional Experience
+## Professional Experience
 
 ### **Cognizant** &nbsp;|&nbsp; *Analyst (Automation)*
 `Aug 2025 – Present` &nbsp;|&nbsp; `Bengaluru, India`
@@ -254,7 +234,7 @@ Explore the standalone drop-in interactive canvas component available inside [`c
 <!-- NOTABLE PROJECTS & INNOVATIONS                                            -->
 <!-- ========================================================================= -->
 
-## 💡 Featured Projects & Innovations
+## Featured Projects & Innovations
 
 <table>
   <tr>
@@ -309,13 +289,13 @@ Explore the standalone drop-in interactive canvas component available inside [`c
 <!-- HONORS & HACKATHON RECOGNITIONS                                           -->
 <!-- ========================================================================= -->
 
-## 🏆 Honors & Hackathon Recognitions
+## Honors & Hackathon Recognitions
 
-- 🥇 **1st Place Winner (Education Track)** — *CODE4HOPE / ImpactX Hackathon (Sep 2024)* for **BunkBuddy**.
-- 🌟 **Top 30% Finalist (Out of 2,989 Participants)** — *OpenAI × NamasteDev Codex Hackathon (July 2026)* for **DukaanSetu**.
-- 🤖 **Applied Agentic AI in SDLC** — *OpenAI Codex × Cognizant Hackathon (Aug 2026)*.
-- ⚡ **Autonomous Multi-Agent Challenge** — *Cognizant Neuro SAN AI Agents Challenge (July 2026)*.
-- 📱 **Founder & Solo Developer** — *Discuss: Social Platform ([discussit.in](https://discussit.in) & Google Play Closed Testing)*.
+- **1st Place Winner (Education Track)** — *CODE4HOPE / ImpactX Hackathon (Sep 2024)* for **BunkBuddy**.
+- **Top 30% Finalist (Out of 2,989 Participants)** — *OpenAI × NamasteDev Codex Hackathon (July 2026)* for **DukaanSetu**.
+- **Applied Agentic AI in SDLC** — *OpenAI Codex × Cognizant Hackathon (Aug 2026)*.
+- **Autonomous Multi-Agent Challenge** — *Cognizant Neuro SAN AI Agents Challenge (July 2026)*.
+- **Founder & Solo Developer** — *Discuss: Social Platform ([discussit.in](https://discussit.in) & Google Play Closed Testing)*.
 
 <br/>
 
@@ -323,7 +303,7 @@ Explore the standalone drop-in interactive canvas component available inside [`c
 <!-- CERTIFICATIONS & INDUSTRY CREDENTIALS                                     -->
 <!-- ========================================================================= -->
 
-## 📜 Certifications & Industry Credentials
+## Certifications & Industry Credentials
 
 <div align="center">
   <img src="https://img.shields.io/badge/SAP-Certified-008FD3?style=for-the-badge&logo=sap&logoColor=white" alt="SAP Certified"/>
@@ -346,7 +326,7 @@ Explore the standalone drop-in interactive canvas component available inside [`c
 <!-- EDUCATION                                                                 -->
 <!-- ========================================================================= -->
 
-## 🎓 Education
+## Education
 
 - **Master of Computer Applications (MCA)** — *Mangalayatan University (Distance Learning)* &nbsp;|&nbsp; `Oct 2025 – Present`
 - **Bachelor of Computer Applications (BCA)** — *Acharya Institute of Graduate Studies* &nbsp;|&nbsp; `Aug 2022 – Jul 2025`
