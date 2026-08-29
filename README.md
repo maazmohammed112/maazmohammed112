@@ -1,5 +1,5 @@
 <!-- ========================================================================= -->
-<!-- HERO BANNER                                                               -->
+<!-- HERO / HEADER SECTION                                                     -->
 <!-- ========================================================================= -->
 
 <div align="center">
@@ -7,7 +7,7 @@
 
   <br/>
 
-  <!-- Interactive Quick Links & Badges -->
+  <!-- Top Interactive Quick Links -->
   <a href="https://discussit.in" target="_blank">
     <img src="https://img.shields.io/badge/%3Cdiscuss%2F%3E-discussit.in-6366F1?style=for-the-badge&logo=react&logoColor=white" alt="Discuss Platform"/>
   </a>
@@ -28,6 +28,39 @@
 <br/>
 
 <!-- ========================================================================= -->
+<!-- PROFILE HERO CARD & AVATAR ALIGNMENT                                      -->
+<!-- ========================================================================= -->
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="32%" align="center" valign="middle">
+        <a href="https://maazprofile.tech" target="_blank">
+          <img src="./assets/portrait.jpg" width="220" style="border-radius: 18px; border: 2px solid #58a6ff; box-shadow: 0 12px 32px rgba(0,0,0,0.6);" alt="Mohammed Maaz A — Constellation Portrait"/>
+        </a>
+        <br/>
+        <sub><b>🌌 Interactive Constellation Portrait</b></sub>
+      </td>
+      <td width="68%" valign="middle" align="left">
+        <h2>👋 Mohammed Maaz A</h2>
+        <p><b>Automation Analyst &bull; Agentic AI & SAP Specialist &bull; Full-Stack Engineer</b></p>
+        <p>Designing and orchestrating high-throughput enterprise automation workflows with <b>UiPath</b>, <b>Power Automate</b>, <b>SAP BTP/BPA</b>, and integrating <b>Autonomous Agentic AI</b> into mission-critical business cycles.</p>
+        <p>
+          Founder of <a href="https://discussit.in"><b>&lt;discuss/&gt;</b></a> (real-time community platform deployed on Google Play closed testing & web at <a href="https://discussit.in">discussit.in</a>) and hackathon winner across <b>ImpactX</b>, <b>OpenAI Codex</b>, and <b>Cognizant Neuro SAN AI</b> challenges.
+        </p>
+        <p>
+          <a href="https://discussit.in"><img src="https://img.shields.io/badge/Live%20Platform-discussit.in-6366F1?style=flat-square&logo=react&logoColor=white" alt="Discuss"/></a>
+          <a href="https://maazprofile.tech"><img src="https://img.shields.io/badge/Portfolio-maazprofile.tech-0A66C2?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+          <a href="./constellation-portrait/single-file.html"><img src="https://img.shields.io/badge/Interactive%20Canvas-Constellation%20Mesh-10B981?style=flat-square&logo=html5&logoColor=white" alt="Constellation Mesh Demo"/></a>
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br/>
+
+<!-- ========================================================================= -->
 <!-- GITHUB ENGINEERING TELEMETRY & LIVE METRICS                               -->
 <!-- ========================================================================= -->
 
@@ -40,7 +73,7 @@
         <img src="https://github-readme-stats-fast.vercel.app/api?username=maazmohammed112&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&count_private=true&include_all_commits=true" width="100%" alt="Maaz's GitHub Stats"/>
       </td>
       <td width="50%" align="center">
-        <img src="https://streak-stats.demolab.com/?user=maazmohammed112&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b72&currStreakLabel=79c0ff" width="100%" alt="Maaz's GitHub Streak"/>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=maazmohammed112&theme=tokyonight" width="100%" alt="Maaz's GitHub Summary Stats"/>
       </td>
     </tr>
     <tr>
@@ -65,18 +98,6 @@
 <br/>
 
 <!-- ========================================================================= -->
-<!-- EXECUTIVE PROFILE                                                         -->
-<!-- ========================================================================= -->
-
-## 👤 Executive Profile
-
-> **Automation Analyst** with **1.5+ years** of industry experience in enterprise AI automation, SAP ecosystems, data analytics, software QA, and full-stack development.
->
-> Skilled in architecting scalable enterprise workflows with **UiPath**, **Microsoft Power Automate**, **SAP Build Process Automation (BPA)**, and integrating **Autonomous Agentic AI** into production pipelines to deliver measurable operational efficiencies.
-
-<br/>
-
-<!-- ========================================================================= -->
 <!-- FEATURED FLAGSHIP PLATFORM                                                -->
 <!-- ========================================================================= -->
 
@@ -86,9 +107,9 @@
   <table>
     <tr>
       <td align="left">
-        <h3><a href="https://discussit.in">🌐 &lt;discuss/&gt; — Next-Gen Social & Community Platform</a></h3>
-        <p><b>Founder & Solo Architect</b> &nbsp;|&nbsp; <b>Live Web:</b> <a href="https://discussit.in"><b>discussit.in</b></a> &nbsp;|&nbsp; <b>Mobile:</b> Google Play Store (Closed Testing)</p>
-        <p>A full-scale, real-time social networking application built from the ground up to empower meaningful community discussions, thread curation, instant multimedia sharing, and dynamic user feeds.</p>
+        <h3><a href="https://discussit.in">🌐 &lt;discuss/&gt; — Modern Community & Discussion Ecosystem</a></h3>
+        <p><b>Founder & Lead Architect</b> &nbsp;|&nbsp; <b>Live Web:</b> <a href="https://discussit.in"><b>discussit.in</b></a> &nbsp;|&nbsp; <b>Mobile:</b> Google Play Store (Closed Testing)</p>
+        <p>A full-scale, real-time social networking application architected from scratch to enable high-speed community discourse, structured thread curation, instant multimedia sharing, and dynamic user feeds.</p>
         <p>
           <a href="https://discussit.in"><img src="https://img.shields.io/badge/Live%20Website-discussit.in-6366F1?style=flat-square&logo=googlechrome&logoColor=white" alt="Live Site"/></a>
           <img src="https://img.shields.io/badge/Google%20Play-Closed%20Testing-34A853?style=flat-square&logo=googleplay&logoColor=white" alt="Google Play"/>
@@ -100,6 +121,21 @@
     </tr>
   </table>
 </div>
+
+<br/>
+
+<!-- ========================================================================= -->
+<!-- INTERACTIVE CONSTELLATION MESH COMPONENT                                  -->
+<!-- ========================================================================= -->
+
+## 🌌 Interactive Constellation Mesh Portrait
+
+Explore the standalone drop-in interactive canvas component available inside [`constellation-portrait/`](./constellation-portrait/):
+
+- 💻 **Desktop**: Move cursor over portrait to disperse particles and draw luminous constellation lines.
+- 📱 **Mobile & iPad**: Touch and drag to guide glowing particle streams, tap to trigger explosive kinetic shockwaves.
+- 📦 **Drop-in Ready**: Includes single-file HTML, modular ES6 class, and React/Next.js components.
+- 🔗 **Direct Demo**: [`constellation-portrait/single-file.html`](./constellation-portrait/single-file.html)
 
 <br/>
 

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Maaz A — Constellation Portrait Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      background: radial-gradient(circle at 50% 20%, #0d1a2d 0%, #030811 100%);
+      color: #f0f6fc;
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+      overflow-x: hidden;
+    }
+    .wrapper {
+      width: 100%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (max-width: 880px) {
+      .wrapper {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+    .portrait-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+    }
+    .portrait-card {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      height: 540px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #030a14;
+      border: 1px solid rgba(88, 166, 255, 0.25);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85), 0 0 40px rgba(56, 139, 253, 0.15);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .portrait-card:hover {
+      border-color: rgba(88, 166, 255, 0.5);
+      box-shadow: 0 32px 70px rgba(0, 0, 0, 0.95), 0 0 60px rgba(88, 166, 255, 0.25);
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: crosshair;
+      touch-action: none;
+    }
+    .hint-chip {
+      background: rgba(13, 17, 23, 0.85);
+      border: 1px solid rgba(88, 166, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #79c0ff;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .badge-pill {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      color: #a5b4fc;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .main-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #ffffff 40%, #58a6ff 80%, #a5b4fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .role-title {
+      font-size: 1.15rem;
+      color: #7ee787;
+      font-weight: 600;
+    }
+    .bio-text {
+      color: #8b949e;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .actions-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #ffffff;
+      background: rgba(56, 139, 253, 0.12);
+      border: 1px solid rgba(88, 166, 255, 0.25);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: rgba(56, 139, 253, 0.3);
+      border-color: #58a6ff;
+      transform: translateY(-2px);
+    }
+    .btn-primary {
+      background: #0969da;
+      border-color: #218bff;
+      box-shadow: 0 8px 20px rgba(9, 105, 218, 0.3);
+    }
+    .btn-primary:hover {
+      background: #1f6feb;
+      box-shadow: 0 12px 25px rgba(9, 105, 218, 0.45);
+    }
+    .controls-panel {
+      background: rgba(13, 17, 23, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .control-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: #c9d1d9;
+    }
+    input[type="range"] {
+      accent-color: #58a6ff;
+      cursor: pointer;
+      width: 140px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Left Column: Portrait Component -->
+    <div class="portrait-col">
+      <div class="portrait-card">
+        <canvas id="portraitCanvas"></canvas>
+      </div>
+      <div class="hint-chip">✦ Interactive Constellation Mesh Engine ✦</div>
+    </div>
+
+    <!-- Right Column: Profile & Controls -->
+    <div class="info-col">
+      <div class="badge-pill">&lt;discuss/&gt; Founder & Automation Analyst</div>
+      <h1 class="main-title">Mohammed Maaz A</h1>
+      <p class="role-title">Automation Analyst &bull; Agentic AI & SAP Specialist &bull; Full Stack Engineer</p>
+      <p class="bio-text">
+        Specialized in enterprise automation with UiPath, Power Automate, and SAP BTP/BPA, integrating Autonomous Multi-Agent AI systems into mission-critical business workflows.
+      </p>
+
+      <!-- Live Links -->
+      <div class="actions-row">
+        <a href="https://discussit.in" target="_blank" class="btn btn-primary">&lt;discuss/&gt; Platform</a>
+        <a href="https://maazprofile.tech" target="_blank" class="btn">Portfolio</a>
+        <a href="https://linkedin.com/in/mohammed-maaz-a-0aa730217" target="_blank" class="btn">LinkedIn</a>
+      </div>
+
+      <!-- Real-time parameter controls -->
+      <div class="controls-panel">
+        <div class="control-row">
+          <span>Photo Opacity</span>
+          <input type="range" id="opacitySlider" min="0" max="1" step="0.05" value="0.85">
+        </div>
+        <div class="control-row">
+          <span>Hover Radius</span>
+          <input type="range" id="radiusSlider" min="80" max="240" step="10" value="145">
+        </div>
+        <div class="control-row">
+          <span>Shockwave Burst</span>
+          <button class="btn" id="shockBtn" style="padding: 6px 14px; font-size: 0.8rem;">Trigger Blast</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { ConstellationPortrait } from './constellation.js';
+
+    const canvas = document.getElementById('portraitCanvas');
+    const portrait = new ConstellationPortrait(canvas, {
+      imageSrc: './portrait.jpg',
+      photoOpacity: 0.85,
+      targetCount: 2600,
+      hoverRadius: 145,
+      meshDistance: 36,
+      pixelDisplacement: 2.2
+    });
+
+    document.getElementById('opacitySlider').addEventListener('input', (e) => {
+      portrait.config.photoOpacity = parseFloat(e.target.value);
+    });
+
+    document.getElementById('radiusSlider').addEventListener('input', (e) => {
+      portrait.config.hoverRadius = parseFloat(e.target.value);
+    });
+
+    document.getElementById('shockBtn').addEventListener('click', () => {
+      portrait.explode(40, portrait.width / 2, portrait.height / 2);
+    });
+  </script>
+</body>
+</html>

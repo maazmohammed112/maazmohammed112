@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Maaz A — Interactive Constellation Portrait</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      background: radial-gradient(circle at 50% 20%, #0c1829 0%, #030811 100%);
+      color: #f0f6fc;
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      overflow-x: hidden;
+    }
+    .container {
+      width: 100%;
+      max-width: 960px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+    .header {
+      text-align: center;
+    }
+    .title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #ffffff 30%, #58a6ff 70%, #bc8cff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      color: #8b949e;
+      font-weight: 400;
+    }
+    .portrait-card {
+      position: relative;
+      width: 440px;
+      height: 540px;
+      max-width: 92vw;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #030a14;
+      border: 1px solid rgba(88, 166, 255, 0.25);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(56, 139, 253, 0.15);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+    }
+    .portrait-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 32px 70px rgba(0, 0, 0, 0.9), 0 0 50px rgba(88, 166, 255, 0.25);
+      border-color: rgba(88, 166, 255, 0.45);
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: crosshair;
+      touch-action: none;
+    }
+    .hint-bar {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(13, 17, 23, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #79c0ff;
+      letter-spacing: 0.04em;
+      pointer-events: none;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .controls-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 600px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #ffffff;
+      background: rgba(56, 139, 253, 0.15);
+      border: 1px solid rgba(88, 166, 255, 0.3);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: rgba(56, 139, 253, 0.35);
+      border-color: #58a6ff;
+      transform: translateY(-2px);
+    }
+    .btn-primary {
+      background: #0969da;
+      border-color: #218bff;
+    }
+    .btn-primary:hover {
+      background: #218bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Mohammed Maaz A</h1>
+      <p class="subtitle">Interactive Constellation Mesh &bull; Desktop Hover &bull; Touch Drag &bull; Tap Shockwave</p>
+    </div>
+
+    <!-- 1. Constellation Portrait Canvas Container -->
+    <div class="portrait-card">
+      <canvas id="constellationCanvas"></canvas>
+      <div class="hint-bar">✦ Hover / Touch & Drag / Click to Explode ✦</div>
+    </div>
+
+    <!-- Quick Navigation Links -->
+    <div class="controls-grid">
+      <a href="https://discussit.in" target="_blank" class="btn btn-primary">&lt;discuss/&gt; Platform</a>
+      <a href="https://maazprofile.tech" target="_blank" class="btn">Portfolio</a>
+      <a href="https://linkedin.com/in/mohammed-maaz-a-0aa730217" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/maazmohammed112" target="_blank" class="btn">GitHub</a>
+    </div>
+  </div>
+
+  <!-- 2. Interactive Constellation Script -->
+  <script>
+    (function() {
+      const canvas = document.getElementById('constellationCanvas');
+      const ctx = canvas.getContext('2d', { willReadFrequently: true });
+      
+      const config = {
+        imageSrc: './portrait.jpg',
+        photoOpacity: 0.85,
+        targetCount: 2600,
+        hoverRadius: 145,
+        meshDistance: 36,
+        spring: 0.085,
+        friction: 0.82,
+        pixelDisplacement: 2.2
+      };
+
+      let width = 0, height = 0, dpr = 1, particles = [];
+      let imageRect = { x: 0, y: 0, width: 0, height: 0 };
+      const mouse = { x: -2000, y: -2000, targetX: -2000, targetY: -2000, active: false };
+
+      const image = new Image();
+      image.crossOrigin = 'Anonymous';
+      image.src = config.imageSrc;
+
+      function resize() {
+        const rect = canvas.getBoundingClientRect();
+        width = Math.round(rect.width || 440);
+        height = Math.round(rect.height || 540);
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+        canvas.width = Math.round(width * dpr);
+        canvas.height = Math.round(height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+        if (image.complete && image.naturalWidth) {
+          const imgRatio = image.naturalWidth / image.naturalHeight;
+          const screenRatio = width / height;
+          let dw, dh;
+
+          if (screenRatio > imgRatio) {
+            dh = height * 0.95;
+            dw = dh * imgRatio;
+          } else {
+            dw = width * 0.94;
+            dh = dw / imgRatio;
+          }
+
+          imageRect = {
+            x: (width - dw) / 2,
+            y: (height - dh) / 2,
+            width: dw,
+            height: dh
+          };
+
+          buildParticles();
+        }
+      }
+
+      function buildParticles() {
+        particles = [];
+        const sw = Math.max(1, Math.round(imageRect.width));
+        const sh = Math.max(1, Math.round(imageRect.height));
+
+        const off = document.createElement('canvas');
+        off.width = sw;
+        off.height = sh;
+        const offCtx = off.getContext('2d', { willReadFrequently: true });
+        offCtx.drawImage(image, 0, 0, sw, sh);
+
+        const data = offCtx.getImageData(0, 0, sw, sh).data;
+        const total = sw * sh;
+        const isMobile = width < 600;
+        const target = isMobile ? 1500 : config.targetCount;
+        const gap = Math.max(isMobile ? 5 : 3.8, Math.round(Math.sqrt(total / target)));
+
+        for (let y = 0; y < sh; y += gap) {
+          for (let x = 0; x < sw; x += gap) {
+            const idx = (Math.floor(y) * sw + Math.floor(x)) * 4;
+            if (data[idx + 3] < 20) continue;
+
+            const r = data[idx], g = data[idx + 1], b = data[idx + 2];
+            const brightness = r * 0.299 + g * 0.587 + b * 0.114;
+            if (brightness < 6 && data[idx + 3] < 200) continue;
+
+            particles.push({
+              homeX: imageRect.x + x,
+              homeY: imageRect.y + y,
+              x: imageRect.x + x + (Math.random() - 0.5) * 4,
+              y: imageRect.y + y + (Math.random() - 0.5) * 4,
+              vx: 0, vy: 0,
+              r, g, b, rgbStr: `${r},${g},${b}`,
+              radius: 1.1 + (brightness / 255) * 0.6,
+              phase: Math.random() * Math.PI * 2,
+              hover: 0
+            });
+          }
+        }
+      }
+
+      function explode(strength, cx, cy) {
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          const dx = p.x - cx, dy = p.y - cy;
+          const dist = Math.max(10, Math.hypot(dx, dy));
+          if (dist < 320) {
+            const force = (1 - dist / 320) * strength;
+            p.vx += (dx / dist) * force;
+            p.vy += (dy / dist) * force;
+          }
+        }
+      }
+
+      function getPos(e) {
+        const rect = canvas.getBoundingClientRect();
+        return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+      }
+
+      // Desktop Mouse Listeners
+      canvas.addEventListener('mousemove', (e) => {
+        const p = getPos(e);
+        mouse.targetX = p.x; mouse.targetY = p.y;
+        if (!mouse.active) { mouse.x = p.x; mouse.y = p.y; }
+        mouse.active = true;
+      });
+
+      canvas.addEventListener('mouseleave', () => {
+        mouse.active = false;
+        mouse.targetX = -2000;
+        mouse.targetY = -2000;
+      });
+
+      canvas.addEventListener('mousedown', (e) => {
+        const p = getPos(e);
+        explode(34, p.x, p.y);
+      });
+
+      // Mobile Touch Listeners
+      canvas.addEventListener('touchstart', (e) => {
+        if (e.touches[0]) {
+          const p = getPos(e.touches[0]);
+          mouse.x = mouse.targetX = p.x;
+          mouse.y = mouse.targetY = p.y;
+          mouse.active = true;
+          explode(28, p.x, p.y);
+        }
+      }, { passive: true });
+
+      canvas.addEventListener('touchmove', (e) => {
+        if (e.touches[0]) {
+          const p = getPos(e.touches[0]);
+          mouse.targetX = p.x;
+          mouse.targetY = p.y;
+        }
+      }, { passive: true });
+
+      canvas.addEventListener('touchend', () => {
+        mouse.active = false;
+        mouse.targetX = -2000;
+        mouse.targetY = -2000;
+      });
+
+      window.addEventListener('resize', resize);
+
+      function animate(now) {
+        mouse.x += (mouse.targetX - mouse.x) * 0.24;
+        mouse.y += (mouse.targetY - mouse.y) * 0.24;
+
+        ctx.clearRect(0, 0, width, height);
+
+        // 1. Photo backdrop
+        if (image.complete && config.photoOpacity > 0.01) {
+          ctx.globalAlpha = config.photoOpacity;
+          ctx.drawImage(image, imageRect.x, imageRect.y, imageRect.width, imageRect.height);
+        }
+
+        // 2. Interactive Constellation Mesh Particles
+        ctx.globalAlpha = 1;
+        const connected = [];
+        const radSq = config.hoverRadius * config.hoverRadius;
+        const meshDistSq = config.meshDistance * config.meshDistance;
+
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          let influence = 0;
+
+          if (mouse.active) {
+            const dx = mouse.x - p.x, dy = mouse.y - p.y;
+            const dSq = dx * dx + dy * dy;
+
+            if (dSq < radSq && dSq > 0) {
+              const d = Math.sqrt(dSq);
+              const norm = 1 - d / config.hoverRadius;
+              influence = norm * norm * (3 - 2 * norm);
+              const ang = Math.atan2(p.y - mouse.y, p.x - mouse.x);
+              const force = (0.8 + config.pixelDisplacement) * influence;
+              p.vx += Math.cos(ang) * force;
+              p.vy += Math.sin(ang) * force;
+            }
+          }
+
+          p.hover = influence;
+
+          // Natural subtle idle wave
+          const tx = p.homeX + Math.sin(p.homeY * 0.025 + now * 0.0015 + p.phase) * 1.3;
+          const ty = p.homeY + Math.cos(p.homeX * 0.02 + now * 0.0012) * 0.6;
+
+          p.vx += (tx - p.x) * config.spring;
+          p.vy += (ty - p.y) * config.spring;
+          p.vx *= config.friction;
+          p.vy *= config.friction;
+          p.x += p.vx;
+          p.y += p.vy;
+
+          // Render glowing particle node
+          ctx.fillStyle = `rgba(${p.rgbStr}, ${Math.min(1, 0.7 + p.hover * 0.3)})`;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.radius + p.hover * 1.2, 0, Math.PI * 2);
+          ctx.fill();
+
+          if (p.hover > 0.08) connected.push(p);
+        }
+
+        // 3. Connect active constellation lines
+        if (connected.length > 1) {
+          ctx.lineWidth = 0.75;
+          for (let i = 0; i < connected.length; i++) {
+            for (let j = i + 1; j < connected.length; j++) {
+              const p1 = connected[i], p2 = connected[j];
+              const dx = p1.x - p2.x, dy = p1.y - p2.y;
+              const dSq = dx * dx + dy * dy;
+
+              if (dSq < meshDistSq) {
+                const d = Math.sqrt(dSq);
+                const lineAlpha = (1 - d / config.meshDistance) * 0.55 * Math.min(p1.hover, p2.hover);
+                ctx.strokeStyle = `rgba(${p1.r}, ${p1.g}, ${p1.b}, ${lineAlpha})`;
+                ctx.beginPath();
+                ctx.moveTo(p1.x, p1.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.stroke();
+              }
+            }
+          }
+        }
+
+        requestAnimationFrame(animate);
+      }
+
+      image.onload = () => {
+        resize();
+        requestAnimationFrame(animate);
+      };
+    })();
+  </script>
+</body>
+</html>
