@@ -1,79 +1,62 @@
 <!-- ========================================================================= -->
-<!-- HEADER / HERO SECTION                                                    -->
+<!-- HERO BANNER                                                               -->
 <!-- ========================================================================= -->
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,20,30&height=220&section=header&text=MOHAMMED%20MAAZ%20A&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Automation%20Analyst%20%7C%20Agentic%20AI%20%26%20SAP%20Specialist%20%7C%20Full-Stack%20Engineer&descFontSize=16&descAlignY=58&descAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=10,12,24,30&height=220&section=header&text=MOHAMMED%20MAAZ%20A&fontSize=42&fontColor=0969da&animation=fadeIn&fontAlignY=38&desc=Automation%20Analyst%20%7C%20Agentic%20AI%20%26%20SAP%20Specialist%20%7C%20Full-Stack%20Engineer&descFontSize=16&descAlignY=58&descAlign=50">
-    <img alt="Mohammed Maaz A Header" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,20,30&height=220&section=header&text=MOHAMMED%20MAAZ%20A&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Automation%20Analyst%20%7C%20Agentic%20AI%20%26%20SAP%20Specialist%20%7C%20Full-Stack%20Engineer&descFontSize=16&descAlignY=58&descAlign=50" width="100%">
-  </picture>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,20,30&height=220&section=header&text=MOHAMMED%20MAAZ%20A&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Automation%20Analyst%20%7C%20Agentic%20AI%20Specialist%20%7C%20Full-Stack%20Engineer&descFontSize=16&descAlignY=58&descAlign=50" width="100%" alt="Mohammed Maaz A Banner"/>
 
   <br/>
 
-  <!-- Interactive / Profile Status Badges -->
+  <!-- Interactive Quick Links & Badges -->
+  <a href="https://discussit.in" target="_blank">
+    <img src="https://img.shields.io/badge/%3Cdiscuss%2F%3E-discussit.in-6366F1?style=for-the-badge&logo=react&logoColor=white" alt="Discuss Platform"/>
+  </a>
   <a href="https://maazprofile.tech" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-maazprofile.tech-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio Badge"/>
+    <img src="https://img.shields.io/badge/Portfolio-maazprofile.tech-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/>
   </a>
   <a href="https://linkedin.com/in/mohammed-maaz-a-0aa730217" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Maaz%20A-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+    <img src="https://img.shields.io/badge/LinkedIn-Mohammed%20Maaz%20A-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:maazmohammed112@gmail.com">
-    <img src="https://img.shields.io/badge/Email-maazmohammed112@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge"/>
+    <img src="https://img.shields.io/badge/Email-maazmohammed112%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
   <a href="https://maps.google.com/?q=Bengaluru,+Karnataka,+India" target="_blank">
-    <img src="https://img.shields.io/badge/Location-Bengaluru%2C%20India-24292e?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location Badge"/>
+    <img src="https://img.shields.io/badge/Location-Bengaluru%2C%20India-24292e?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location"/>
   </a>
 </div>
 
 <br/>
 
 <!-- ========================================================================= -->
-<!-- GITHUB METRICS & REAL-TIME ACTIVITY DASHBOARD                             -->
+<!-- GITHUB ENGINEERING TELEMETRY & LIVE METRICS                               -->
 <!-- ========================================================================= -->
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20GITHUB%20ENGINEERING%20ANALYTICS%20%26%20TELEMETRY&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=f6f8fa&height=38&section=header&text=%E2%96%B6%20GITHUB%20ENGINEERING%20ANALYTICS%20%26%20TELEMETRY&fontSize=16&fontColor=0969da&fontAlignY=65&fontAlign=50">
-    <img alt="GitHub Analytics Header" src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20GITHUB%20ENGINEERING%20ANALYTICS%20%26%20TELEMETRY&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50" width="100%">
-  </picture>
-</div>
-
-<br/>
+## 📊 GitHub Engineering Analytics
 
 <div align="center">
   <table>
     <tr>
       <td width="50%" align="center">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=maazmohammed112&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&count_private=true&include_all_commits=true">
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=maazmohammed112&show_icons=true&theme=default&hide_border=true&bg_color=ffffff&title_color=0969da&icon_color=0969da&text_color=24292f&count_private=true&include_all_commits=true">
-          <img alt="Maaz's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=maazmohammed112&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&count_private=true&include_all_commits=true" width="100%">
-        </picture>
+        <img src="https://github-readme-stats-fast.vercel.app/api?username=maazmohammed112&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=79c0ff&text_color=c9d1d9&count_private=true&include_all_commits=true" width="100%" alt="Maaz's GitHub Stats"/>
       </td>
       <td width="50%" align="center">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=maazmohammed112&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b72&currStreakLabel=79c0ff">
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=maazmohammed112&theme=default&hide_border=true&background=ffffff&ring=0969da&fire=fd8c73&currStreakLabel=0969da">
-          <img alt="Maaz's GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=maazmohammed112&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b72&currStreakLabel=79c0ff" width="100%">
-        </picture>
+        <img src="https://streak-stats.demolab.com/?user=maazmohammed112&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b72&currStreakLabel=79c0ff" width="100%" alt="Maaz's GitHub Streak"/>
       </td>
     </tr>
     <tr>
       <td width="50%" align="center">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=maazmohammed112&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9">
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=maazmohammed112&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0969da&text_color=24292f">
-          <img alt="Maaz's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=maazmohammed112&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" width="100%">
-        </picture>
+        <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=maazmohammed112&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9" width="100%" alt="Maaz's Top Languages"/>
       </td>
       <td width="50%" align="center">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=maazmohammed112&theme=tokyonight">
-          <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=maazmohammed112&theme=default">
-          <img alt="Maaz's Profile Summary" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=maazmohammed112&theme=tokyonight" width="100%">
-        </picture>
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=maazmohammed112&theme=tokyonight" width="100%" alt="Maaz's Profile Summary Card"/>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=maazmohammed112&theme=tokyonight" width="100%" alt="Productive Time Card"/>
+      </td>
+      <td width="50%" align="center">
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=maazmohammed112&theme=tokyonight" width="100%" alt="Repos per Language"/>
       </td>
     </tr>
   </table>
@@ -81,61 +64,50 @@
 
 <br/>
 
-<!-- Activity Graph -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=maazmohammed112&theme=github-compact&bg_color=0d1117&color=58a6ff&line=3fb950&point=f0883e&hide_border=true&area=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=maazmohammed112&theme=github-compact&bg_color=ffffff&color=0969da&line=1a7f37&point=bc4c00&hide_border=true&area=true">
-    <img alt="Maaz's Contribution Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=maazmohammed112&theme=github-compact&bg_color=0d1117&color=58a6ff&line=3fb950&point=f0883e&hide_border=true&area=true" width="100%">
-  </picture>
-</div>
-
-<br/>
-
-<!-- Contribution Snake Animation -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/maazmohammed112/maazmohammed112/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/maazmohammed112/maazmohammed112/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/maazmohammed112/maazmohammed112/output/github-contribution-grid-snake-dark.svg" width="100%">
-  </picture>
-</div>
-
-<br/>
-
 <!-- ========================================================================= -->
-<!-- EXECUTIVE SUMMARY                                                         -->
+<!-- EXECUTIVE PROFILE                                                         -->
 <!-- ========================================================================= -->
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20EXECUTIVE%20PROFILE&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=f6f8fa&height=38&section=header&text=%E2%96%B6%20EXECUTIVE%20PROFILE&fontSize=16&fontColor=0969da&fontAlignY=65&fontAlign=50">
-    <img alt="Executive Profile Header" src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20EXECUTIVE%20PROFILE&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50" width="100%">
-  </picture>
-</div>
+## 👤 Executive Profile
 
-<br/>
-
-> **Automation Analyst** with **1.5+ years** of hands-on industry expertise across enterprise AI automation, SAP technology ecosystems, data analytics, software quality engineering, and full-stack software development. 
+> **Automation Analyst** with **1.5+ years** of industry experience in enterprise AI automation, SAP ecosystems, data analytics, software QA, and full-stack development.
 >
-> Specialized in architecting scalable enterprise process automation, orchestrating intelligent Agentic AI workflows into mission-critical business cycles, and driving measurable operational cost reductions through reliable, high-throughput architectures.
+> Skilled in architecting scalable enterprise workflows with **UiPath**, **Microsoft Power Automate**, **SAP Build Process Automation (BPA)**, and integrating **Autonomous Agentic AI** into production pipelines to deliver measurable operational efficiencies.
 
 <br/>
 
 <!-- ========================================================================= -->
-<!-- TECHNICAL SKILL MATRIX                                                    -->
+<!-- FEATURED FLAGSHIP PLATFORM                                                -->
 <!-- ========================================================================= -->
 
+## 🚀 Flagship Platform: `<discuss/>`
+
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20TECHNICAL%20COMPETENCY%20MATRIX&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=f6f8fa&height=38&section=header&text=%E2%96%B6%20TECHNICAL%20COMPETENCY%20MATRIX&fontSize=16&fontColor=0969da&fontAlignY=65&fontAlign=50">
-    <img alt="Technical Competency Matrix" src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20TECHNICAL%20COMPETENCY%20MATRIX&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50" width="100%">
-  </picture>
+  <table>
+    <tr>
+      <td align="left">
+        <h3><a href="https://discussit.in">🌐 &lt;discuss/&gt; — Next-Gen Social & Community Platform</a></h3>
+        <p><b>Founder & Solo Architect</b> &nbsp;|&nbsp; <b>Live Web:</b> <a href="https://discussit.in"><b>discussit.in</b></a> &nbsp;|&nbsp; <b>Mobile:</b> Google Play Store (Closed Testing)</p>
+        <p>A full-scale, real-time social networking application built from the ground up to empower meaningful community discussions, thread curation, instant multimedia sharing, and dynamic user feeds.</p>
+        <p>
+          <a href="https://discussit.in"><img src="https://img.shields.io/badge/Live%20Website-discussit.in-6366F1?style=flat-square&logo=googlechrome&logoColor=white" alt="Live Site"/></a>
+          <img src="https://img.shields.io/badge/Google%20Play-Closed%20Testing-34A853?style=flat-square&logo=googleplay&logoColor=white" alt="Google Play"/>
+          <img src="https://img.shields.io/badge/React%20%2F%20Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+          <img src="https://img.shields.io/badge/Firebase%20Backend-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase"/>
+          <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/>
+        </p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <br/>
+
+<!-- ========================================================================= -->
+<!-- TECHNICAL COMPETENCY MATRIX                                               -->
+<!-- ========================================================================= -->
+
+## 🛠️ Technical Competency Matrix
 
 <table>
   <tr>
@@ -144,10 +116,10 @@
       <img src="https://img.shields.io/badge/UiPath-FA4616?style=flat-square&logo=uipath&logoColor=white" alt="UiPath"/>
       <img src="https://img.shields.io/badge/Power%20Automate-0066FF?style=flat-square&logo=powerautomate&logoColor=white" alt="Power Automate"/>
       <img src="https://img.shields.io/badge/SAP%20BTP-008FD3?style=flat-square&logo=sap&logoColor=white" alt="SAP BTP"/>
-      <img src="https://img.shields.io/badge/SAP%20Build%20Process%20Automation-008FD3?style=flat-square&logo=sap&logoColor=white" alt="SAP BPA"/>
+      <img src="https://img.shields.io/badge/SAP%20BPA-008FD3?style=flat-square&logo=sap&logoColor=white" alt="SAP BPA"/>
       <img src="https://img.shields.io/badge/SAP%20BAS-008FD3?style=flat-square&logo=sap&logoColor=white" alt="SAP BAS"/>
       <img src="https://img.shields.io/badge/SAP%20Analytics%20Cloud-008FD3?style=flat-square&logo=sap&logoColor=white" alt="SAP Analytics Cloud"/>
-      <img src="https://img.shields.io/badge/SAP%20Gen%20AI-008FD3?style=flat-square&logo=sap&logoColor=white" alt="SAP GenAI"/>
+      <img src="https://img.shields.io/badge/SAP%20Generative%20AI-008FD3?style=flat-square&logo=sap&logoColor=white" alt="SAP GenAI"/>
       <img src="https://img.shields.io/badge/REST%20APIs-009688?style=flat-square&logo=postman&logoColor=white" alt="REST APIs"/>
     </td>
   </tr>
@@ -186,7 +158,7 @@
     </td>
   </tr>
   <tr>
-    <td width="25%"><b>Full-Stack Web & Ecosystem</b></td>
+    <td width="25%"><b>Full-Stack Web & Dev Tools</b></td>
     <td>
       <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
       <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
@@ -204,7 +176,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,js,r,react,nextjs,tailwind,nodejs,mongodb,aws,git,github,postman,vscode,powershell" alt="Skills Icons Bar" />
+  <img src="https://skillicons.dev/icons?i=python,ts,js,r,react,nextjs,tailwind,nodejs,mongodb,firebase,aws,git,github,postman,vscode,powershell" alt="Skills Icons Bar" />
 </div>
 
 <br/>
@@ -213,40 +185,32 @@
 <!-- PROFESSIONAL EXPERIENCE                                                   -->
 <!-- ========================================================================= -->
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20CAREER%20%26%20PROFESSIONAL%20EXPERIENCE&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=f6f8fa&height=38&section=header&text=%E2%96%B6%20CAREER%20%26%20PROFESSIONAL%20EXPERIENCE&fontSize=16&fontColor=0969da&fontAlignY=65&fontAlign=50">
-    <img alt="Career Header" src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20CAREER%20%26%20PROFESSIONAL%20EXPERIENCE&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50" width="100%">
-  </picture>
-</div>
-
-<br/>
+## 💼 Professional Experience
 
 ### **Cognizant** &nbsp;|&nbsp; *Analyst (Automation)*
 `Aug 2025 – Present` &nbsp;|&nbsp; `Bengaluru, India`
 
-- **Enterprise Automation Architectures**: Engineer and maintain scalable automation suites across UiPath, Microsoft Power Automate, and Python, eliminating hundreds of recurring manual operating hours across core business pipelines.
-- **SAP Build Process Automation (BPA)**: Build end-to-end enterprise workflow automation for complex multi-tier approvals and enterprise resource planning operations.
-- **SAP BTP & UI5/Fiori**: Develop and deploy high-performance SAP UI5/Fiori applications within SAP Business Application Studio (BAS) running on SAP Business Technology Platform.
-- **System Integration**: Architect secure REST API connectors and automation bridges linking disparate enterprise services and databases.
-- **Agentic AI Deployment**: Lead initiatives introducing Autonomous Agentic AI frameworks and GenAI orchestration into enterprise workflow automation.
+- **Enterprise Automation Solutions**: Architect and maintain scalable automation suites across UiPath, Microsoft Power Automate, and Python to eliminate manual operational workloads.
+- **SAP Build Process Automation (BPA)**: Design and implement end-to-end enterprise workflow automation for complex multi-tier business approvals and system tasks.
+- **SAP BTP & UI5/Fiori**: Build and maintain responsive SAP UI5/Fiori applications within SAP Business Application Studio (BAS) running on SAP Business Technology Platform.
+- **Enterprise Integrations**: Develop robust REST API connectors and automation bridges linking enterprise services, ERPs, and databases.
+- **Agentic AI Initiatives**: Implement autonomous Agentic AI frameworks and GenAI orchestration into enterprise workflow automation.
 
 ---
 
 ### **MSA Software** &nbsp;|&nbsp; *Software Testing & QA Engineer*
 `Apr 2025 – Aug 2025` &nbsp;|&nbsp; `Bengaluru, India`
 
-- **Comprehensive Test Engineering**: Formulated and executed structured test suites covering functional, regression, integration, and exploratory validation for multi-platform products (Web, Android, Smart TV, and embedded widgets).
-- **Payment & Backend Validation**: Conducted deep testing of backend workflows, transaction lifecycles, and third-party payment gateway integrations.
-- **Defect Lifecycle Management**: Standardized QA documentation, defect logging in Jira, and sprint test tracking in Notion, directly reducing release cycle escape defects.
+- **Test Suite Formulation**: Authored and executed structured test suites covering functional, regression, and exploratory validation for multi-platform products (Web, Android, Smart TV, and Widgets).
+- **Payment & Workflow Testing**: Tested backend transactional workflows and integrated payment gateways under rigorous test cases.
+- **Defect Tracking**: Identified defects, logged detailed tickets in Jira, and tracked sprint verification in Notion to ensure high software quality.
 
 ---
 
 ### **Freelance Engineering** &nbsp;|&nbsp; *Full Stack Developer*
 `2025`
 
-- **PrimKart Platform**: Architected and delivered **PrimKart**, a production-ready e-commerce ecosystem built on React, Next.js, and Tailwind CSS featuring integrated payment flows, real-time catalog filtering, and administrative management dashboard.
+- **PrimKart E-Commerce Platform**: Delivered a full-stack e-commerce application using React, Next.js, and Tailwind CSS featuring complete payment checkout flows, dynamic product filtering, and an administrative control dashboard.
 
 <br/>
 
@@ -254,32 +218,24 @@
 <!-- NOTABLE PROJECTS & INNOVATIONS                                            -->
 <!-- ========================================================================= -->
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20FEATURED%20PROJECTS%20%26%20INNOVATIONS&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=f6f8fa&height=38&section=header&text=%E2%96%B6%20FEATURED%20PROJECTS%20%26%20INNOVATIONS&fontSize=16&fontColor=0969da&fontAlignY=65&fontAlign=50">
-    <img alt="Featured Projects Header" src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20FEATURED%20PROJECTS%20%26%20INNOVATIONS&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50" width="100%">
-  </picture>
-</div>
-
-<br/>
+## 💡 Featured Projects & Innovations
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Discuss (Social Platform)</h3>
+      <h3><a href="https://discussit.in">&lt;discuss/&gt; (discussit.in)</a></h3>
       <p><b>Founder & Solo Developer</b></p>
-      <p>Modern mobile social application designed for community discourse, deployed on <b>Google Play Store</b> (closed testing phase). Built with a highly scalable mobile-first backend, real-time messaging, and secure authentication.</p>
+      <p>Modern social discussion platform deployed on <b>Google Play Store</b> (closed testing) and web at <a href="https://discussit.in">discussit.in</a>. Features real-time feeds, community threads, and responsive mobile architecture.</p>
       <p>
+        <a href="https://discussit.in"><img src="https://img.shields.io/badge/Live-discussit.in-6366F1?style=flat-square&logo=googlechrome&logoColor=white" alt="Website"/></a>
         <img src="https://img.shields.io/badge/Google%20Play-414141?style=flat-square&logo=googleplay&logoColor=white" alt="Google Play"/>
-        <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android"/>
         <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase"/>
       </p>
     </td>
     <td width="50%" valign="top">
       <h3>DukaanSetu</h3>
       <p><b>OpenAI × NamasteDev Codex Hackathon (Top 30% / 2,989)</b></p>
-      <p>AI-powered digital commerce and bridge solution empowering local merchants to automate inventory, customer engagement, and multilingual conversational ordering via LLM-driven pipelines.</p>
+      <p>AI-powered digital commerce bridge enabling local retail merchants to automate product catalogs, customer engagement, and multilingual conversational ordering via LLMs.</p>
       <p>
         <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI"/>
         <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
@@ -291,7 +247,7 @@
     <td width="50%" valign="top">
       <h3>BunkBuddy</h3>
       <p><b>CODE4HOPE / ImpactX Hackathon Winner (1st Place)</b></p>
-      <p>Award-winning smart student utility system automating attendance metrics calculation, course thresholds, schedule reminders, and intelligent academic recovery forecasting.</p>
+      <p>Award-winning intelligent student attendance and academic planning utility calculating attendance metrics, margin buffers, and smart timetable alerts.</p>
       <p>
         <img src="https://img.shields.io/badge/1st%20Place-FFD700?style=flat-square&logo=target&logoColor=black" alt="1st Place"/>
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
@@ -301,7 +257,7 @@
     <td width="50%" valign="top">
       <h3>Cognizant Neuro SAN AI Multi-Agent Engine</h3>
       <p><b>Cognizant Neuro SAN AI Challenge & OpenAI Codex Hackathon</b></p>
-      <p>Advanced autonomous multi-agent AI system orchestrating complex software engineering and enterprise decision workflows across the SDLC.</p>
+      <p>Autonomous multi-agent orchestration architecture executing complex software engineering workflows, code review pipelines, and enterprise automation across the SDLC.</p>
       <p>
         <img src="https://img.shields.io/badge/Agentic%20AI-6366F1?style=flat-square&logo=openai&logoColor=white" alt="Agentic AI"/>
         <img src="https://img.shields.io/badge/Cognizant-0033A0?style=flat-square&logo=cognizant&logoColor=white" alt="Cognizant"/>
@@ -314,24 +270,16 @@
 <br/>
 
 <!-- ========================================================================= -->
-<!-- HONORS & HACKATHON ACCOMPLISHMENTS                                        -->
+<!-- HONORS & HACKATHON RECOGNITIONS                                           -->
 <!-- ========================================================================= -->
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20HONORS%20%26%20HACKATHON%20RECOGNITION&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=f6f8fa&height=38&section=header&text=%E2%96%B6%20HONORS%20%26%20HACKATHON%20RECOGNITION&fontSize=16&fontColor=0969da&fontAlignY=65&fontAlign=50">
-    <img alt="Honors Header" src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20HONORS%20%26%20HACKATHON%20RECOGNITION&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50" width="100%">
-  </picture>
-</div>
+## 🏆 Honors & Hackathon Recognitions
 
-<br/>
-
-- **1st Place Winner (Education Track)** — *CODE4HOPE / ImpactX Hackathon (Sep 2024)* for **BunkBuddy**.
-- **Top 30% Finalist (Out of 2,989 Participants)** — *OpenAI × NamasteDev Codex Hackathon (July 2026)* for **DukaanSetu**.
-- **Applied Agentic AI in SDLC** — *OpenAI Codex × Cognizant Hackathon (Aug 2026)*.
-- **Autonomous Multi-Agent Challenge** — *Cognizant Neuro SAN AI Agents Challenge (July 2026)*.
-- **Founder & Solo Developer** — *Discuss: Social Platform (Google Play Closed Testing)*.
+- 🥇 **1st Place Winner (Education Track)** — *CODE4HOPE / ImpactX Hackathon (Sep 2024)* for **BunkBuddy**.
+- 🌟 **Top 30% Finalist (Out of 2,989 Participants)** — *OpenAI × NamasteDev Codex Hackathon (July 2026)* for **DukaanSetu**.
+- 🤖 **Applied Agentic AI in SDLC** — *OpenAI Codex × Cognizant Hackathon (Aug 2026)*.
+- ⚡ **Autonomous Multi-Agent Challenge** — *Cognizant Neuro SAN AI Agents Challenge (July 2026)*.
+- 📱 **Founder & Solo Developer** — *Discuss: Social Platform ([discussit.in](https://discussit.in) & Google Play Closed Testing)*.
 
 <br/>
 
@@ -339,15 +287,7 @@
 <!-- CERTIFICATIONS & INDUSTRY CREDENTIALS                                     -->
 <!-- ========================================================================= -->
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20CERTIFICATIONS%20%26%20CREDENTIALS&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=f6f8fa&height=38&section=header&text=%E2%96%B6%20CERTIFICATIONS%20%26%20CREDENTIALS&fontSize=16&fontColor=0969da&fontAlignY=65&fontAlign=50">
-    <img alt="Certifications Header" src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20CERTIFICATIONS%20%26%20CREDENTIALS&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50" width="100%">
-  </picture>
-</div>
-
-<br/>
+## 📜 Certifications & Industry Credentials
 
 <div align="center">
   <img src="https://img.shields.io/badge/SAP-Certified-008FD3?style=for-the-badge&logo=sap&logoColor=white" alt="SAP Certified"/>
@@ -370,15 +310,7 @@
 <!-- EDUCATION                                                                 -->
 <!-- ========================================================================= -->
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20EDUCATION&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rect&color=f6f8fa&height=38&section=header&text=%E2%96%B6%20EDUCATION&fontSize=16&fontColor=0969da&fontAlignY=65&fontAlign=50">
-    <img alt="Education Header" src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=38&section=header&text=%E2%96%B6%20EDUCATION&fontSize=16&fontColor=58a6ff&fontAlignY=65&fontAlign=50" width="100%">
-  </picture>
-</div>
-
-<br/>
+## 🎓 Education
 
 - **Master of Computer Applications (MCA)** — *Mangalayatan University (Distance Learning)* &nbsp;|&nbsp; `Oct 2025 – Present`
 - **Bachelor of Computer Applications (BCA)** — *Acharya Institute of Graduate Studies* &nbsp;|&nbsp; `Aug 2022 – Jul 2025`
@@ -390,11 +322,7 @@
 <!-- ========================================================================= -->
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,20,30&height=120&section=footer">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=10,12,24,30&height=120&section=footer">
-    <img alt="Footer" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,20,30&height=120&section=footer" width="100%">
-  </picture>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,20,30&height=100&section=footer" width="100%" alt="Footer"/>
   <br/>
-  <sub>Designed with precision for <b>Mohammed Maaz A</b> | Connect on <a href="https://linkedin.com/in/mohammed-maaz-a-0aa730217">LinkedIn</a> or explore the <a href="https://maazprofile.tech">Portfolio</a></sub>
+  <sub>Designed for <b>Mohammed Maaz A</b> &nbsp;|&nbsp; Explore <a href="https://discussit.in"><b>&lt;discuss/&gt;</b></a> &nbsp;|&nbsp; Visit <a href="https://maazprofile.tech"><b>maazprofile.tech</b></a> &nbsp;|&nbsp; Connect on <a href="https://linkedin.com/in/mohammed-maaz-a-0aa730217"><b>LinkedIn</b></a></sub>
 </div>
